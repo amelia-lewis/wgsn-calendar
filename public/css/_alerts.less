@@ -1,0 +1,45 @@
+.alert {
+  display: inline-block;
+  .bg-xdk-grey;
+  .block-ver-sm;
+  .block-hor-md;
+  .overflow-auto;
+  .transition;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  border-radius: 2px;
+  transform: translate(-50%, 0);
+  opacity: 0;
+
+  p {
+    .tight;
+
+    span {
+      .text-bold;
+    }
+  }
+
+  a.alert--undo {
+    .text-bold;
+    .pull-right;
+    .text-uppercase;
+  }
+
+  &.show {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+
+// ========================================================================================================================
+// Specific to Style Guide
+
+#section-alerts {
+  .alert {
+    position: relative;
+    bottom: auto;
+    left: auto;
+  }
+}

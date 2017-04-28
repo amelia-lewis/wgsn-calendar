@@ -1,0 +1,291 @@
+// ====================
+// Content Tile
+// ====================
+.content-tile,
+.content-tile--small,
+.content-tile--featured {
+  display: block;
+  .transition;
+
+  * {
+    .transition;
+  }
+  
+  .content-tile--img {
+    overflow: hidden;
+    
+    img {
+      display: block;
+      width: 100%;
+      transform: translate3d(0, 0, 0) scale(1, 1);
+      transition: all 600ms;
+    }
+  }
+
+  .content-tile--text {
+    margin: 10px 0 30px;
+
+    .content-tile--category {
+      .list-bare;
+      
+      li {
+        display: inline-block;
+        .text-bold;
+        .text-uppercase;
+        .text-smaller;
+        .block-right-sm;
+        .tight;
+        color: @wgsn-primary-color;
+
+        body.insight & {
+          color: @insight-primary-color;
+        }
+
+        body.fashion & {
+          color: @fashion-primary-color;
+        }
+
+        body.li & {
+          color: @li-primary-color;
+        }
+
+        body.instock & {
+          color: @instock-primary-color;
+        }
+
+        body.barometer & {
+          color: @barometer-primary-color;
+        }
+
+        body.styletrial & {
+          color: @styletrial-primary-color;
+        }
+      }
+    }
+
+    .content-tile--title {
+      background-image: linear-gradient(transparent 50%, fade(@wgsn-primary-color, 20%) 0%);
+      background-size: 0 100%;
+      background-repeat: no-repeat;
+      display: inline;
+      margin-top: 0;
+      padding-bottom: 2px;
+    
+      body.insight & {
+        background-image: linear-gradient(transparent 50%, fade(@insight-primary-color, 20%) 0%);
+      }
+    
+      body.fashion & {
+        background-image: linear-gradient(transparent 50%, fade(@fashion-primary-color, 20%) 0%);
+      }
+    
+      body.li & {
+        background-image: linear-gradient(transparent 50%, fade(@li-primary-color, 20%) 0%);
+      }
+    
+      body.instock & {
+        background-image: linear-gradient(transparent 50%, fade(@instock-primary-color, 20%) 0%);
+      }
+
+      body.barometer & {
+        background-image: linear-gradient(transparent 50%, fade(@barometer-primary-color, 20%) 0%);
+      }
+    
+      body.styletrial & {
+        background-image: linear-gradient(transparent 50%, fade(@styletrial-primary-color, 20%) 0%);
+      }
+    }
+    
+    .content-tile--info,
+    .content-tile--info span {
+      .text-grey;
+    }
+  }
+
+  &:hover {
+    .content-tile--img {
+      img {
+        transform: translate3d(0, 0, 0) scale(1.05, 1.05);
+      }
+    }
+
+    .content-tile--title {
+      background-size: 100% 100%;
+    }
+  }
+}
+
+
+// ====================
+// Featured Content Tile
+// ====================
+.content-tile--featured {
+  display: block;
+  position: relative;
+  .transition;
+
+  .content-tile--img {
+    overflow: hidden;
+    z-index: 5;
+    width: calc(~"100% - 20px");
+    
+    img {
+      display: block;
+      width: 100%;
+      transform: translate3d(0, 0, 0) scale(1, 1);
+      transition: all 600ms;
+    }
+  }
+
+  .content-tile--category {
+    .list-bare;
+    position: absolute;
+    top: 10px;
+    left: -5px;
+
+    li {
+      .text-bold;
+      .text-white;
+      .text-uppercase;
+      .text-smaller;
+      .inline-block;
+      background: @wgsn-primary-color;
+      padding: 4px 8px 3px;
+
+      body.insight & {
+        background: @insight-primary-color;
+      }
+
+      body.fashion & {
+        background: @fashion-primary-color;
+      }
+
+      body.li & {
+        background: @li-primary-color;
+      }
+
+      body.instock & {
+        background: @instock-primary-color;
+      }
+
+      body.barometer & {
+        background: @barometer-primary-color;
+      }
+
+      body.styletrial & {
+        background: @styletrial-primary-color;
+      }
+    }
+  }
+
+  .content-tile--text {
+    .bg-white;
+    .block-md;
+    .transition;
+    width: calc(~"100% - 30px");
+    margin: -50px 0 20px 30px;
+    z-index: 10;
+    position: relative;
+    border-bottom: 2px solid @wgsn-primary-color;
+    box-shadow: 0 2px 14px fade(black, 0%);
+
+    body.insight & {
+      border-color: @insight-primary-color;
+    }
+
+    body.fashion & {
+      border-color: @fashion-primary-color;
+    }
+
+    body.li & {
+      border-color: @li-primary-color;
+    }
+
+    body.instock & {
+      border-color: @instock-primary-color;
+    }
+
+    body.barometer & {
+      border-color: @barometer-primary-color;
+    }
+
+    body.styletrial & {
+      border-color: @styletrial-primary-color;
+    }
+
+    .content-tile--title {
+      margin-top: 0;
+    }
+  }
+
+  &:hover {
+    .content-tile--text {
+      box-shadow: 0 2px 20px fade(black, 10%);
+    }
+  }
+}
+
+
+// ====================
+// Small Content Tile
+// ====================
+.content-tile--small {
+  display: block;
+  .transition;
+  overflow: auto;
+  .block-bot-md;
+
+  .content-tile--img {
+    float: left;
+    width: 100px;
+    height: 100px;
+  }
+
+  .content-tile--text {
+    float: left;
+    padding: 0 0 0 15px;
+    width: calc(~"100% - 100px");
+    margin: 0;
+  }
+
+  &:hover {
+    .content-tile--img {
+      img {
+        transform: translate3d(0, 0, 0) scale(1);
+      }
+    }
+  }
+}
+
+
+// ====================
+// Video Content Tile
+// ====================
+.content-tile--video {
+  .content-tile--img {
+    padding-bottom: 60%;
+    position: relative;
+
+    // maintain rectangular aspect ratio with square asset
+    img {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+    }
+
+    .content-tile--length {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      .block-ver-xs;
+      .block-hor-sm;
+      .tight;
+      background: fade(black, 80%);
+      color: white;
+      .text-smaller;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+mixin futures-tile(link, img, city, date, description)
+  .card.img-card
+    .img-container(style="background-image: url('" + img + "';")
+    .text-container
+      .block-bot-sm
+        h3
+          span.text-bolder Futures 
+          span.text-bolder= city
+          br
+          span.text-bolder —
+          span.text-bolder= date
+        p= description
+      a.btn.btn--coloured.btn--block.tight(href=link target="_blank") Buy Tickets

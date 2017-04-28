@@ -1,0 +1,155 @@
+// Standard button, must be used with one of the colour classes below
+button,
+.btn {
+  margin: 0 10px 10px 0;
+  padding: 0 20px;
+  height: 36px;
+  font-size: 14px;
+  line-height: 100%;
+  .text-bold;
+  .text-center;
+  .transition;
+  .flex-center;
+  position: relative;
+  transform: translate3d(0, 0, 0);
+  cursor: pointer;
+
+  .icon {
+    margin-right: 5px;
+  }
+
+  &:active {
+    transform: translate3d(0, 2px, 0);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  // COLOURED
+  &.btn--coloured {
+    border: 1px solid @wgsn-primary-color;
+    background: @wgsn-primary-color;
+    color: white;
+
+    body.insight & {
+      border-color: @insight-primary-color;
+      background: @insight-primary-color;
+    }
+
+    body.fashion & {
+      border-color: @fashion-primary-color;
+      background: @fashion-primary-color;
+    }
+
+    body.li & {
+      border-color: @li-primary-color;
+      background: @li-primary-color;
+    }
+
+    body.instock & {
+      border-color: @instock-primary-color;
+      background: @instock-primary-color;
+    }
+
+    body.barometer & {
+      border-color: @barometer-primary-color;
+      background: @barometer-primary-color;
+    }
+
+    body.styletrial & {
+      border-color: @styletrial-primary-color;
+      background: @styletrial-primary-color;
+    }
+
+    &:not(.btn--disabled):hover {
+      background: lighten(@wgsn-primary-color, 10);
+
+      body.insight & {
+        background: lighten(@insight-primary-color, 10);
+      }
+
+      body.fashion & {
+        background: lighten(@fashion-primary-color, 10);
+      }
+
+      body.li & {
+        background: lighten(@li-primary-color, 10);
+      }
+
+      body.instock & {
+        background: lighten(@instock-primary-color, 10);
+      }
+
+      body.barometer & {
+        background: lighten(@barometer-primary-color, 10);
+      }
+
+      body.styletrial & {
+        background: lighten(@styletrial-primary-color, 10);
+      }
+    }
+  }
+
+  // BLACK
+  &.btn--black {
+    border: 1px solid black;
+    background: black;
+    color: white;
+
+    &:not(.btn--disabled):hover {
+      background: lighten(black, 10);
+    }
+  }
+
+  // WHITE
+  &.btn--white {
+    border: 1px solid @lt-grey;
+    background: white;
+    color: @dk-grey;
+
+    &:not(.btn--disabled):hover {
+      background: darken(white, 2);
+    }
+  }
+
+  // CLEAR
+  &.btn--clear {
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+
+    &:not(.btn--disabled):hover {
+      background: fade(black, 20%);
+    }
+  }
+
+  // DISABLED
+  &.btn--disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+
+  // FULL-WIDTH, BLOCK
+  &.btn--full {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  // LARGE
+  &.btn--lg {
+    height: 48px;
+    padding: 17px 20px;
+  }
+
+  // SMALL
+  &.btn--sm {
+    height: 26px;
+    padding: 5px 10px 7px;
+  }
+}
+
+
+// ========================================================================================================================
+// Specific to Style Guide

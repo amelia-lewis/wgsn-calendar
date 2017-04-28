@@ -1,0 +1,93 @@
+.sidebar-menu {
+  position: relative;
+  .bg-xlt-grey;
+  .block-ver-md;
+  .block-right-md;
+  height: 100%;
+  display: none;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 1000px;
+    height: 100%;
+    .bg-xlt-grey;
+    z-index: -1;
+    display: none;
+  }
+
+  @media (min-width: @screen-sm-min) {
+    display: block;
+
+    &:after {
+      display: block;
+    }
+  }
+
+  .sidebar-menu--title:first-child {
+    margin-top: 0;
+  }
+
+  .sidebar-menu--title, li {
+    a {
+      display: inline;
+      background-image: linear-gradient(transparent 50%, fade(@wgsn-grey-md, 30%) 0%);
+      background-size: 0 100%;
+      background-repeat: no-repeat;
+      padding-bottom: 2px;
+    
+      &:hover {
+        background-size: 100% 100%;
+      }
+    }
+
+    &.sidebar-menu--active {
+      a {
+        background-image: linear-gradient(transparent 50%, fade(@wgsn-primary-color, 20%) 0%);
+        background-size: 100% 100%;
+      
+        body.insight & {
+          background-image: linear-gradient(transparent 50%, fade(@insight-primary-color, 20%) 0%);
+        }
+      
+        body.fashion & {
+          background-image: linear-gradient(transparent 50%, fade(@fashion-primary-color, 20%) 0%);
+        }
+      
+        body.li & {
+          background-image: linear-gradient(transparent 50%, fade(@li-primary-color, 20%) 0%);
+        }
+      
+        body.instock & {
+          background-image: linear-gradient(transparent 50%, fade(@instock-primary-color, 20%) 0%);
+        }
+      
+        body.styletrial & {
+          background-image: linear-gradient(transparent 50%, fade(@styletrial-primary-color, 20%) 0%);
+        }
+      }
+    }
+  }
+
+  ul {
+    .list-bare;
+  }
+}
+
+
+// ========================================================================================================================
+// Specific to Style Guide
+
+body.style-guide {
+  .sidebar-menu.sticky {
+    .block-top-lg;
+  }
+
+  #section-sidebar-menu {
+    .card {
+      background: none;
+    }
+  }
+}

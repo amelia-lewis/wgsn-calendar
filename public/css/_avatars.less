@@ -1,0 +1,41 @@
+.avatar {
+  display: inline-block;
+  background: @md-grey no-repeat center / cover;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  margin: 0 10px 0 0;
+  position: relative;
+
+  &:after {
+    content: attr(data-initials);
+    width: 100%;
+    height: 100%;
+    .flex-center;
+    .text-white;
+    .text-bold;
+    .text-smaller;
+  }
+}
+
+
+.make-avatar-size(@size, @width, @font) {
+  .avatar--@{size} {
+    &:extend(.avatar);
+    width: @width;
+    height: @width;
+
+    &:after {
+      font-size: @font;
+    }
+  } 
+}
+
+.make-avatar-size(xs, 16px, 6px);
+.make-avatar-size(sm, 24px, 8px);
+.make-avatar-size(lg, 48px, 14px);
+.make-avatar-size(xl, 64px, 18px);
+
+.avatar--xs:after {
+  opacity: 0;
+}

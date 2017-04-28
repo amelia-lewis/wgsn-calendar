@@ -1,0 +1,120 @@
+.table {
+  .sans-serif;
+  .text-left;
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 14px;
+
+  thead {
+    th {
+      border-bottom: 1px solid @dk-grey;
+      padding: 12px 5px;
+      .text-bold;
+    }
+  }
+
+  tbody {
+    tr {
+      td {
+        border-bottom: 1px solid @lt-grey;
+        padding: 12px 5px;
+        .text-normal;
+        .transition;
+      }
+    }
+  }
+
+  &.table--alternating {
+    tbody {
+      tr:nth-of-type(even) {
+        td {
+          background: fade(@xlt-grey, 50%);
+        }
+      }
+    }
+  }
+
+  &.table--selectable {
+    tbody {
+      cursor: pointer;
+      
+      tr.table--selected {
+        td {
+          background: fade(@wgsn-primary-color, 10%);
+
+          body.insight & {
+            background: fade(@insight-primary-color, 10%);
+          }
+
+          body.fashion & {
+            background: fade(@fashion-primary-color, 10%);
+          }
+
+          body.li & {
+            background: fade(@li-primary-color, 10%);
+          }
+
+          body.instock & {
+            background: fade(@instock-primary-color, 10%);
+          }
+
+          body.styletrial & {
+            background: fade(@styletrial-primary-color, 10%);
+          }
+        }
+
+        &:hover {
+          td {
+            background: fade(@wgsn-primary-color, 15%);
+
+            body.insight & {
+              background: fade(@insight-primary-color, 15%);
+            }
+
+            body.fashion & {
+              background: fade(@fashion-primary-color, 15%);
+            }
+
+            body.li & {
+              background: fade(@li-primary-color, 15%);
+            }
+
+            body.instock & {
+              background: fade(@instock-primary-color, 15%);
+            }
+
+            body.styletrial & {
+              background: fade(@styletrial-primary-color, 15%);
+            }
+          }
+        }
+      }
+
+      tr:hover {
+        td {
+          background: fade(@wgsn-primary-color, 5%);
+
+          body.insight & {
+            background: fade(@insight-primary-color, 5%);
+          }
+
+          body.fashion & {
+            background: fade(@fashion-primary-color, 5%);
+          }
+
+          body.li & {
+            background: fade(@li-primary-color, 5%);
+          }
+
+          body.instock & {
+            background: fade(@instock-primary-color, 5%);
+          }
+
+          body.styletrial & {
+            background: fade(@styletrial-primary-color, 5%);
+          }
+        }
+      }
+    }
+  }
+}

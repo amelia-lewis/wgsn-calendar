@@ -1,0 +1,87 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  max-width: 580px;
+  min-height: 100px;
+  background: white;
+  .box-shadow;
+  transform: translate(-50%, -50%);
+  .transition;
+  z-index: 100;
+  opacity: 0;
+  pointer-events: none;
+
+  .modal--header {
+    background: @xdk-grey;
+    color: white;
+    .block-md;
+    overflow: auto;
+    position: relative;
+
+    .modal--title {
+      .tight;
+      float: left;
+    }
+
+    .modal--sub-title {
+      margin: 4px 0 0 10px;
+      float: left;
+      opacity: 0.5;
+    }
+
+    .icon-cross {
+      position: absolute;
+      top: calc(~"50% - 6px");
+      right: 20px;
+      .hoverable;
+      opacity: 0.6;
+      width: 12px;
+      height: 12px;
+      cursor: pointer;
+      .transition;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  .modal--content {
+    .block-md;
+    border: solid @lt-grey;
+    border-width: 0 1px 0 1px;
+  }
+
+  .modal--footer {
+    .block-sm;
+    .text-right;
+    overflow: auto;
+    border: 1px solid @lt-grey;
+
+    button {
+      margin: 0 0 0 10px;
+      .inline-block;
+    }
+  }
+
+  &.show {
+    opacity: 1;
+    pointer-events: all;
+    transform: translate(-50%, -50%);
+  }
+}
+
+
+// ========================================================================================================================
+// Specific to Style Guide
+
+#section-modals {
+  .modal {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: translate(0, 0);
+  }
+}

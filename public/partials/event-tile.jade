@@ -1,0 +1,10 @@
+mixin event-tile(link, img, title, date, country, ...categories)
+  a.content-tile(href=link)
+    .content-tile--img: img(src=img)
+    .content-tile--text
+      ul.content-tile--category
+        each category in categories
+          li= category
+      .block-bot-xs: h4.content-tile--title= title
+      p.content-tile--info.tight: span= date
+      p.content-tile--info: span= country
