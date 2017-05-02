@@ -1,5 +1,13 @@
 #calendar-filters {
   line-height: 140%;
+
+  span {
+    font-weight: bold;
+
+    &:not(:last-of-type) {
+      margin-right: 10px;
+    }
+  }
   
   .input--dropdown-bare {
     font-size: 24px;
@@ -7,15 +15,11 @@
     background-position: right top 9px;
     background-size: 22px;
     padding-right: 25px;
-    margin: 0 10px;
+    margin: 0;
     border-width: 2px;
 
-    &:first-of-type {
-      margin-left: 0;
-    }
-
-    &:last-of-type {
-      margin-right: 0;
+    &:not(:last-of-type) {
+      margin-right: 10px;
     }
 
     @media (min-width: @screen-sm-min) {

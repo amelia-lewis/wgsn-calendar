@@ -1,11 +1,12 @@
 include partials/event-tile
 include partials/futures-tile
 
-.content-wrap.block-top-lg
-  h1 Calendar
-  p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+.content-wrap
+  .row.page-title
+    .col-xs-12
+      h1.page-title--primary Calendar
 
-  .row.block-bot-md
+  .row.block-top-lg
     .col-xs-12
       h2#calendar-filters
         select.input--dropdown-bare
@@ -41,9 +42,9 @@ include partials/futures-tile
           option Vintage
           option Women’s Only
           option Yarns/Fibres
-        |  events in 
+        span events in 
         select.input--dropdown-bare
-          option All Countries
+          option all countries
           option Australia
           option Bangladesh
           option Belgium
@@ -73,11 +74,11 @@ include partials/futures-tile
           option United Arab Emirates
           option US
           option Wales
-        |  happening
+        span happening
         select.input--dropdown-bare
-          option Today
-          option This month
-          option Next month
+          option today
+          option this month
+          option next month
           option June 2017
           option July 2017
           option August 2017
@@ -87,25 +88,35 @@ include partials/futures-tile
           option December 2017
           option 2018
           option 2019
-        | .
+        span .
 
   .row
     .col-xs-12.col-sm-8.col-md-9
       .row.block-top-md
-        .col-xs-12.col-sm-6.col-md-4.col-lg-3: +event-tile("/event", "https://www.governorsballmusicfestival.com/wp-www-governorsballmusicfestival-com/wp/wp-content/uploads/2016/11/experience-activities-alt-300x300.jpg", "The Governor's Ball Music Festival", "June 2–4, 2017", "U.S.", "Festival")
-        .col-xs-12.col-sm-6.col-md-4.col-lg-3: +event-tile("/event", "https://www.governorsballmusicfestival.com/wp-www-governorsballmusicfestival-com/wp/wp-content/uploads/2016/11/experience-activities-alt-300x300.jpg", "The Governor's Ball Music Festival", "June 2–4, 2017", "U.S.", "Festival")
-        .col-xs-12.col-sm-6.col-md-4.col-lg-3: +event-tile("/event", "https://www.governorsballmusicfestival.com/wp-www-governorsballmusicfestival-com/wp/wp-content/uploads/2016/11/experience-activities-alt-300x300.jpg", "The Governor's Ball Music Festival", "June 2–4, 2017", "U.S.", "Festival")
-        .col-xs-12.col-sm-6.col-md-4.col-lg-3: +event-tile("/event", "https://www.governorsballmusicfestival.com/wp-www-governorsballmusicfestival-com/wp/wp-content/uploads/2016/11/experience-activities-alt-300x300.jpg", "The Governor's Ball Music Festival", "June 2–4, 2017", "U.S.", "Festival")
-        .col-xs-12.col-sm-6.col-md-4.col-lg-3: +event-tile("/event", "https://www.governorsballmusicfestival.com/wp-www-governorsballmusicfestival-com/wp/wp-content/uploads/2016/11/experience-activities-alt-300x300.jpg", "The Governor's Ball Music Festival", "June 2–4, 2017", "U.S.", "Festival")
-        .col-xs-12.col-sm-6.col-md-4.col-lg-3: +event-tile("/event", "https://www.governorsballmusicfestival.com/wp-www-governorsballmusicfestival-com/wp/wp-content/uploads/2016/11/experience-activities-alt-300x300.jpg", "The Governor's Ball Music Festival", "June 2–4, 2017", "U.S.", "Festival")
-        .col-xs-12.col-sm-6.col-md-4.col-lg-3: +event-tile("/event", "https://www.governorsballmusicfestival.com/wp-www-governorsballmusicfestival-com/wp/wp-content/uploads/2016/11/experience-activities-alt-300x300.jpg", "The Governor's Ball Music Festival", "June 2–4, 2017", "U.S.", "Festival")
-        .col-xs-12.col-sm-6.col-md-4.col-lg-3: +event-tile("/event", "https://www.governorsballmusicfestival.com/wp-www-governorsballmusicfestival-com/wp/wp-content/uploads/2016/11/experience-activities-alt-300x300.jpg", "The Governor's Ball Music Festival", "June 2–4, 2017", "U.S.", "Festival")
-        .col-xs-12.col-sm-6.col-md-4.col-lg-3: +event-tile("/event", "https://www.governorsballmusicfestival.com/wp-www-governorsballmusicfestival-com/wp/wp-content/uploads/2016/11/experience-activities-alt-300x300.jpg", "The Governor's Ball Music Festival", "June 2–4, 2017", "U.S.", "Festival")
-        .col-xs-12.col-sm-6.col-md-4.col-lg-3: +event-tile("/event", "https://www.governorsballmusicfestival.com/wp-www-governorsballmusicfestival-com/wp/wp-content/uploads/2016/11/experience-activities-alt-300x300.jpg", "The Governor's Ball Music Festival", "June 2–4, 2017", "U.S.", "Festival")
-        .col-xs-12.col-sm-6.col-md-4.col-lg-3: +event-tile("/event", "https://www.governorsballmusicfestival.com/wp-www-governorsballmusicfestival-com/wp/wp-content/uploads/2016/11/experience-activities-alt-300x300.jpg", "The Governor's Ball Music Festival", "June 2–4, 2017", "U.S.", "Festival")
-        .col-xs-12.col-sm-6.col-md-4.col-lg-3: +event-tile("/event", "https://www.governorsballmusicfestival.com/wp-www-governorsballmusicfestival-com/wp/wp-content/uploads/2016/11/experience-activities-alt-300x300.jpg", "The Governor's Ball Music Festival", "June 2–4, 2017", "U.S.", "Festival")
-        .col-xs-12.col-sm-6.col-md-4.col-lg-3: +event-tile("/event", "https://www.governorsballmusicfestival.com/wp-www-governorsballmusicfestival-com/wp/wp-content/uploads/2016/11/experience-activities-alt-300x300.jpg", "The Governor's Ball Music Festival", "June 2–4, 2017", "U.S.", "Festival")
-        .col-xs-12.col-sm-6.col-md-4.col-lg-3: +event-tile("/event", "https://www.governorsballmusicfestival.com/wp-www-governorsballmusicfestival-com/wp/wp-content/uploads/2016/11/experience-activities-alt-300x300.jpg", "The Governor's Ball Music Festival", "June 2–4, 2017", "U.S.", "Festival")
+        .col-xs-12.col-sm-6.col-md-4.col-lg-3: +event-tile("/event", "https://www.wgsn.com/storage/vol1/calendar_images/Governors%20Ball1470132303.png", "The Governor's Ball Music Festival", "June 2–4, 2017", "U.S.", "Festival")
+        .col-xs-12.col-sm-6.col-md-4.col-lg-3: +event-tile("/event", "https://www.wgsn.com/storage/vol22/calendar_images/Panorama1492074596.png", "Panorama", "July 4–6, 2017", "U.S.", "Footwear", "Fashion", "Accessories")
+        .col-xs-12.col-sm-6.col-md-4.col-lg-3: +event-tile("/event", "https://www.wgsn.com/storage/vol1/calendar_images/Screen%20Shot%202016-11-16%20at%202.24.17%20PM1479306284.png", "Mode City", "July 8–10, 2017", "France", "Swimwear", "Intimates")
+        .col-xs-12.col-sm-6.col-md-4.col-lg-3: +event-tile("/event", "https://www.wgsn.com/storage/vol1/calendar_images/Screen%20Shot%202016-11-16%20at%202.28.41%20PM1479306552.png", "Cosmoprof North America", "July 9–11, 2017", "U.S.", "Packaging", "Beauty & Fragrance")
+        .col-xs-12.col-sm-6.col-md-4.col-lg-3: +event-tile("/event", "https://www.wgsn.com/storage/vol22/calendar_images/Screen%20Shot%202017-04-18%20at%202.33.46%20PM1492522453.png", "MARKET by Kleine Fabriek", "July 9–10, 2017", "Netherlands", "Children's")
+        .col-xs-12.col-sm-6.col-md-4.col-lg-3: +event-tile("/event", "https://www.wgsn.com/storage/vol1/calendar_images/Screen%20Shot%202016-10-25%20at%202.43.07%20PM1477403010.png", "New York Men's Fashion Week S/S 18", "July 10–13, 2017", "U.S.", "Men's", "Catwalks")
+        .col-xs-12.col-sm-6.col-md-4.col-lg-3: +event-tile("/event", "https://www.wgsn.com/storage/vol1/calendar_images/Governors%20Ball1470132303.png", "The Governor's Ball Music Festival", "June 2–4, 2017", "U.S.", "Festival")
+        .col-xs-12.col-sm-6.col-md-4.col-lg-3: +event-tile("/event", "https://www.wgsn.com/storage/vol22/calendar_images/Panorama1492074596.png", "Panorama", "July 4–6, 2017", "U.S.", "Footwear", "Fashion", "Accessories")
+        .col-xs-12.col-sm-6.col-md-4.col-lg-3: +event-tile("/event", "https://www.wgsn.com/storage/vol1/calendar_images/Screen%20Shot%202016-11-16%20at%202.24.17%20PM1479306284.png", "Mode City", "July 8–10, 2017", "France", "Swimwear", "Intimates")
+        .col-xs-12.col-sm-6.col-md-4.col-lg-3: +event-tile("/event", "https://www.wgsn.com/storage/vol1/calendar_images/Screen%20Shot%202016-11-16%20at%202.28.41%20PM1479306552.png", "Cosmoprof North America", "July 9–11, 2017", "U.S.", "Packaging", "Beauty & Fragrance")
+        .col-xs-12.col-sm-6.col-md-4.col-lg-3: +event-tile("/event", "https://www.wgsn.com/storage/vol22/calendar_images/Screen%20Shot%202017-04-18%20at%202.33.46%20PM1492522453.png", "MARKET by Kleine Fabriek", "July 9–10, 2017", "Netherlands", "Children's")
+        .col-xs-12.col-sm-6.col-md-4.col-lg-3: +event-tile("/event", "https://www.wgsn.com/storage/vol1/calendar_images/Screen%20Shot%202016-10-25%20at%202.43.07%20PM1477403010.png", "New York Men's Fashion Week S/S 18", "July 10–13, 2017", "U.S.", "Men's", "Catwalks")
+        .col-xs-12.col-sm-6.col-md-4.col-lg-3: +event-tile("/event", "https://www.wgsn.com/storage/vol1/calendar_images/Governors%20Ball1470132303.png", "The Governor's Ball Music Festival", "June 2–4, 2017", "U.S.", "Festival")
+        .col-xs-12.col-sm-6.col-md-4.col-lg-3: +event-tile("/event", "https://www.wgsn.com/storage/vol22/calendar_images/Panorama1492074596.png", "Panorama", "July 4–6, 2017", "U.S.", "Footwear", "Fashion", "Accessories")
+        .col-xs-12.col-sm-6.col-md-4.col-lg-3: +event-tile("/event", "https://www.wgsn.com/storage/vol1/calendar_images/Screen%20Shot%202016-11-16%20at%202.24.17%20PM1479306284.png", "Mode City", "July 8–10, 2017", "France", "Swimwear", "Intimates")
+        .col-xs-12.col-sm-6.col-md-4.col-lg-3: +event-tile("/event", "https://www.wgsn.com/storage/vol1/calendar_images/Screen%20Shot%202016-11-16%20at%202.28.41%20PM1479306552.png", "Cosmoprof North America", "July 9–11, 2017", "U.S.", "Packaging", "Beauty & Fragrance")
+        .col-xs-12.col-sm-6.col-md-4.col-lg-3: +event-tile("/event", "https://www.wgsn.com/storage/vol22/calendar_images/Screen%20Shot%202017-04-18%20at%202.33.46%20PM1492522453.png", "MARKET by Kleine Fabriek", "July 9–10, 2017", "Netherlands", "Children's")
+        .col-xs-12.col-sm-6.col-md-4.col-lg-3: +event-tile("/event", "https://www.wgsn.com/storage/vol1/calendar_images/Screen%20Shot%202016-10-25%20at%202.43.07%20PM1477403010.png", "New York Men's Fashion Week S/S 18", "July 10–13, 2017", "U.S.", "Men's", "Catwalks")
+        .col-xs-12.col-sm-6.col-md-4.col-lg-3: +event-tile("/event", "https://www.wgsn.com/storage/vol1/calendar_images/Governors%20Ball1470132303.png", "The Governor's Ball Music Festival", "June 2–4, 2017", "U.S.", "Festival")
+        .col-xs-12.col-sm-6.col-md-4.col-lg-3: +event-tile("/event", "https://www.wgsn.com/storage/vol22/calendar_images/Panorama1492074596.png", "Panorama", "July 4–6, 2017", "U.S.", "Footwear", "Fashion", "Accessories")
+        .col-xs-12.col-sm-6.col-md-4.col-lg-3: +event-tile("/event", "https://www.wgsn.com/storage/vol1/calendar_images/Screen%20Shot%202016-11-16%20at%202.24.17%20PM1479306284.png", "Mode City", "July 8–10, 2017", "France", "Swimwear", "Intimates")
+        .col-xs-12.col-sm-6.col-md-4.col-lg-3: +event-tile("/event", "https://www.wgsn.com/storage/vol1/calendar_images/Screen%20Shot%202016-11-16%20at%202.28.41%20PM1479306552.png", "Cosmoprof North America", "July 9–11, 2017", "U.S.", "Packaging", "Beauty & Fragrance")
+        .col-xs-12.col-sm-6.col-md-4.col-lg-3: +event-tile("/event", "https://www.wgsn.com/storage/vol22/calendar_images/Screen%20Shot%202017-04-18%20at%202.33.46%20PM1492522453.png", "MARKET by Kleine Fabriek", "July 9–10, 2017", "Netherlands", "Children's")
+
 
     .col-xs-12.col-sm-4.col-md-3
       .bg-xlt-grey.block-md.sticky

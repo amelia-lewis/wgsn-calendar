@@ -5,28 +5,28 @@
 
 // components
 @import "_header";
-@import "_hamburgler";
+// @import "_hamburgler";
 
-@import "_code-blocks";
-@import "_aside";
+// @import "_code-blocks";
+// @import "_aside";
 
 @import "_layout";
 @import "_hiders";
 
-@import "_alerts";
-@import "_avatars";
+// @import "_alerts";
+// @import "_avatars";
 @import "_buttons";
 @import "_cards";
-@import "_carousel";
-@import "_comments";
+// @import "_carousel";
+// @import "_comments";
 @import "_inputs";
 @import "_loading-indicator";
 @import "_modals";
 @import "_page-title";
-@import "_sidebar-menu";
-@import "_tab-nav";
-@import "_tables";
-@import "_tokens";
+// @import "_sidebar-menu";
+// @import "_tab-nav";
+// @import "_tables";
+// @import "_tokens";
 @import "_tooltips";
 
 @import "_content-tiles";
@@ -61,7 +61,8 @@ body {
 }
 
 #content {
-  margin-top: @header-height;
+  position: relative;
+  top: @header-height;
   min-height: calc(~"100vh - 40px"); // keep footer at the base of the screen
 }
 
